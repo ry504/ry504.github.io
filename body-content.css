@@ -402,3 +402,9 @@
 .film-project__arrow { color: var(--crimson, #ff4655); font-size: 26px; }
 .film-project:hover strong, .film-project:hover .film-project__watch { color: var(--crimson, #ff4655); }
 .film-project:focus-visible { outline: 2px solid var(--crimson); outline-offset: 6px; }
+
+.contact-social { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 16px; color: var(--paper-dim, #a9a79c); }
+.contact-social:hover { color: var(--crimson, #ff4655); }
+.contact-social:focus-visible { outline: 2px solid var(--crimson); outline-offset: 6px; }
+
+.work-entry__meta > div + div { margin-top: 22px; }
