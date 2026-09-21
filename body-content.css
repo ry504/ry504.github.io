@@ -381,3 +381,22 @@
 }
 .contact-email:hover { color: var(--paper, #e8e6da); }
 .contact-email:focus-visible { outline: 2px solid var(--crimson); outline-offset: 6px; }
+
+/* Film credits use direct links so viewing does not load an Instagram embed. */
+.film-projects { border-top: 1px solid var(--ink-line, #292a2d); }
+.film-project {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: clamp(16px, 2vw, 28px);
+  padding: clamp(28px, 4vw, 48px) 0;
+  border-bottom: 1px solid var(--ink-line, #292a2d);
+  text-decoration: none;
+  color: var(--paper, #e8e6da);
+}
+.film-project strong { font-size: clamp(21px, 2.5vw, 32px); font-weight: 500; letter-spacing: -.035em; }
+.film-project__number { color: var(--paper-faint, #6e6d66); font-size: 12px; }
+.film-project__watch { display: block; margin-top: 12px; font-size: 13px; color: var(--paper-dim, #a9a79c); }
+.film-project__arrow { color: var(--crimson, #ff4655); font-size: 26px; }
+.film-project:hover strong, .film-project:hover .film-project__watch { color: var(--crimson, #ff4655); }
+.film-project:focus-visible { outline: 2px solid var(--crimson); outline-offset: 6px; }
