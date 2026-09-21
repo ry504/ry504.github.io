@@ -231,38 +231,6 @@
 
 .work-entry__media { min-width: 0; }
 
-/* Clickable project artwork: a button that keeps the frame styling. */
-.work-entry__art-frame--button {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.work-entry__art-frame--button:focus-visible {
-  outline: 2px solid var(--crimson, #ff4655);
-  outline-offset: 4px;
-}
-
-.work-entry__art-frame--button .work-entry__art-img {
-  transition: transform 0.3s ease;
-}
-
-.work-entry__art-frame--button:hover .work-entry__art-img,
-.work-entry__art-frame--button:focus-visible .work-entry__art-img {
-  transform: scale(1.015);
-}
-
-.work-entry__note {
-  margin-top: 12px;
-  color: var(--paper-faint, #6e6d66);
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
 .work-entry__actions {
   display: flex;
   flex-wrap: wrap;
@@ -434,7 +402,3 @@
 .film-project__arrow { color: var(--crimson, #ff4655); font-size: 26px; }
 .film-project:hover strong, .film-project:hover .film-project__watch { color: var(--crimson, #ff4655); }
 .film-project:focus-visible { outline: 2px solid var(--crimson); outline-offset: 6px; }
-
-#quoteflow .work-entry__art { aspect-ratio: auto; }
-#quoteflow .work-entry__art-frame { aspect-ratio: 16 / 9; }
-#quoteflow .work-entry__art-img { object-fit: contain; }

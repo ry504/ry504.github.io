@@ -1,6 +1,6 @@
 # Ryan Fong — Portfolio
 
-Personal portfolio featuring SchooledUp, QuoteFlow, interactive platformer pathfinding, physics simulations, and film projects.
+Personal portfolio featuring SchooledUp, interactive platformer pathfinding, physics simulations, and film projects.
 
 ## Local preview
 
@@ -19,7 +19,6 @@ Push changes to `main` to update the site. `.nojekyll` keeps the site as plain s
 
 - `index.html`, CSS, and JavaScript: responsive portfolio with a WebGL dithered hero and interactive project illustrations.
 - `assets/projects/schooledup-demo.mp4`: silent 25-second excerpt of the real application, cropped for readability with processing waits omitted.
-- `assets/projects/quoteflow-demo-v2.mp4`: 35-second QuoteFlow demo using live Jev classification on a fictional inbox, with simulated follow-up reminders.
 - `demos/pathfinding/`: editable platformer navigation playground.
 - `demos/physics/`: soft-body, ball, and linked-wheel experiments.
 
