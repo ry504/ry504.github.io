@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+previews/
+assets/*.md
+assets/statue*.png
+assets/archer-smooth.png
+assets/aviator-portrait-smooth.png
+assets/reference-portrait-smooth.png
+assets/projects/*.md
+assets/projects/island.png
+assets/projects/schooledup.png
+__pycache__/
+*.pyc

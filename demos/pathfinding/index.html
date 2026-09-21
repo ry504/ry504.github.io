@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Platformer pathfinding — Ryan Fong</title><link rel="stylesheet" href="css/demo.css"></head>
+<body>
+<main>
+<header><a href="../../#pathfinding">← Ryan Fong / Selected work</a><span>Interactive experiment</span></header>
+<div class="intro"><div><p class="eyebrow">Algorithms / Game navigation</p><h1>A route is only<br>half the problem.</h1></div><p>Find a path, then watch an agent walk, jump and fall through it. Change the level to see how the navigation graph responds.</p></div>
+<section class="demo" aria-label="Interactive platformer">
+<div class="toolbar"><div class="actions"><button id="run" class="primary">Run agent</button><button id="reset">Reset agent</button></div><div class="actions"><button id="example">Reset level</button><button id="clear">Clear level</button><label class="toggle"><input id="graph" type="checkbox" checked> Show graph</label></div></div>
+<div class="canvas-wrap"><canvas id="world" width="1280" height="720" tabindex="0" aria-label="Editable platformer level. Drag the agent or goal directly. Left drag paints, right drag erases. Arrow keys and Enter also edit." aria-describedby="instructions">This demo requires a browser with Canvas support. It builds a graph above platforms and uses A* to find routes that the agent attempts with gravity and collisions.</canvas></div>
+<div class="readout"><p id="status" role="status" aria-live="polite">Loading level…</p><span id="metrics"></span></div>
+<div class="editor"><span class="tool-label">Paint / touch tools</span><div class="tools" role="group" aria-label="Level editing tool"><button data-tool="ground" aria-pressed="true">Place platform</button><button data-tool="erase" aria-pressed="false">Erase</button></div></div>
+</section>
+<div class="details"><p id="instructions">Drag the agent or goal to move them. Left-click / drag paints platforms; right-click / drag erases. Right-click the agent or press Space to run / reset. H toggles the graph; X clears the level. Touch: use Erase to delete. Keyboard: arrows move the cursor, Enter picks up / drops a marker or paints, Delete erases. Shortcuts apply only while the level is focused. Editing resets the agent.</p><div class="legend"><span><i class="agent"></i>Agent</span><span><i class="goal"></i>Goal</span><span><i class="route"></i>Route</span><span><i class="jump"></i>Jump link</span></div></div>
+<footer><p>The original Python / py5 project was designed and hand-coded entirely by Ryan Fong. This JavaScript / Canvas version is an AI-assisted browser adaptation of that work.</p><p>The graph estimates reachable movements; some custom levels may produce routes the agent cannot complete. Route curves show connections, not exact flight trajectories.</p></footer>
+</main><script type="module" src="js/app.js"></script>
+</body></html>

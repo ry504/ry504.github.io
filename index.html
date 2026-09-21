@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ryan Fong — Statistics &amp; Interactive Work</title>
+<meta name="description" content="Ryan Fong builds applications, algorithms and interactive experiences. Studying Statistics in Quantitative Finance at the University of Toronto Scarborough." />
+<meta name="color-scheme" content="dark" />
+<meta name="theme-color" content="#090a0b" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hero-tuning.css?v=20260921-nav" />
+<link rel="stylesheet" href="body-content.css?v=20260921-contact" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+
+
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top" aria-label="Ryan Fong — home">
+      <span class="brand__name">Ryan Fong</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class="status-badge">
+      <span class="status-badge__dot" aria-hidden="true"></span>
+      <span>Open to opportunities</span>
+    </p>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero__inner">
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="statue statuette" data-statue>
+          <img class="statue__img" src="assets/blindfold-portrait-smooth.png" alt="" decoding="async" data-statue-img />
+        </div>
+      </div>
+
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__name hero__name--ryan">Ryan</span>
+        <span class="hero__name hero__name--fong">Fong</span>
+      </h1>
+
+      <div class="hero__intro">
+        <p class="hero__lede">I build applications, algorithms and interactive experiences.</p>
+        <p class="hero__sub">Statistics in Quantitative Finance &middot; University of Toronto Scarborough</p>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#work">Explore my work</a>
+        <a class="btn btn--ghost" href="#about">About me</a>
+      </div>
+
+      <div class="hero__footer">
+        <p class="hero__place"><span aria-hidden="true">&#9633;</span> Toronto, Canada</p>
+        <p class="hero__scroll"><span>Scroll to explore</span><span class="hero__scroll-line" aria-hidden="true"></span></p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="body-skeleton body-section" id="work" aria-labelledby="work-title">
+    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">01 / Selected work</span><h2 id="work-title">Selected work</h2><span aria-hidden="true">↗</span></div>
+      <div class="body-section__content">
+        <article class="work-entry" id="schooledup">
+          <div class="work-entry__copy">
+            <h3 class="work-entry__title"><a href="https://schooledup.app">SchooledUp</a></h3>
+            <p class="work-entry__subtitle">AI-powered student planning application</p>
+            <p class="work-entry__body">Course information arrives in many different formats, and students are left to organize it themselves. SchooledUp turns that incoming course information into an organized workspace.</p>
+            <dl class="work-entry__meta">
+              <div>
+                <dt>My contribution</dt>
+                <dd>Product direction, interface design, and development across the application, using AI coding tools.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="work-entry__media">
+            <figure class="work-entry__art">
+              <span class="work-entry__art-frame">
+                <img class="work-entry__art-img" src="assets/projects/schooledup-radial.png" alt="Scattered course papers gathering around a central organizer" decoding="async" data-project-art data-project="schooledup" />
+              </span>
+            </figure>
+            <div class="work-entry__actions">
+              <button class="work-entry__action work-entry__action--demo" type="button" data-video-open="schooledup-demo">
+                <span aria-hidden="true">&#9654;</span> Watch demo
+              </button>
+              <a class="work-entry__action work-entry__action--link" href="https://schooledup.app">Visit SchooledUp <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="work-entry" id="pathfinding">
+          <div class="work-entry__copy">
+            <h3 class="work-entry__title">Pathfinding &amp; game navigation</h3>
+            <p class="work-entry__subtitle">Algorithms / Interactive systems</p>
+            <p class="work-entry__body">A platformer navigation experiment: build a level, then watch an agent find a route with A*, using jumps, gravity, and collisions. Originally built in Python with py5 and adapted for the browser so you can edit the level and explore the graph yourself.</p>
+            <dl class="work-entry__meta">
+              <div>
+                <dt>My contribution</dt>
+                <dd>The original Python/py5 project was designed and hand-coded entirely by me, including the navigation graph, pathfinding, agent behaviour, and interactive editor.</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="work-entry__art work-entry__art--link" href="demos/pathfinding/" aria-label="Open the pathfinding playground">
+            <span class="work-entry__art-frame">
+              <img class="work-entry__art-img" src="assets/projects/pathfinding.png" alt="Conceptual dithered illustration of a platformer level and its navigation graph" decoding="async" data-project-art data-project="pathfinding" />
+            </span>
+            <span class="work-entry__art-footer">Open playground <span aria-hidden="true">&#8599;</span></span>
+          </a>
+        </article>
+        <article class="work-entry" id="physics">
+          <div class="work-entry__copy">
+            <h3 class="work-entry__title">Physics simulations</h3>
+            <p class="work-entry__subtitle">Soft bodies / Collisions / Constraints</p>
+            <p class="work-entry__body">A soft-body simulation built from linked points: it falls, deforms, and pushes back toward its original area. Built in Python with py5, with mouse interaction to pull it around.</p>
+            <dl class="work-entry__meta">
+              <div>
+                <dt>Related experiments</dt>
+                <dd>Ball physics on uneven terrain, then a simple car made by linking two balls together and adding directional controls. Built in Processing’s Python mode.</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="work-entry__art work-entry__art--link" href="demos/physics/" aria-label="Open the physics playground">
+            <span class="work-entry__art-frame">
+              <img class="work-entry__art-img" src="assets/projects/physics.png" alt="Conceptual dithered illustration of motion and simulation" decoding="async" data-project-art data-project="physics" />
+            </span>
+            <span class="work-entry__art-footer">Open physics playground <span aria-hidden="true">&#8599;</span></span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="body-skeleton body-section" id="about" aria-labelledby="about-title">
+    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">02 / Background</span><h2 id="about-title">A little about me</h2><span aria-hidden="true">+</span></div>
+      <div class="body-section__content">
+        <div class="about-grid">
+          <p class="about-grid__lead">I’m drawn to product interfaces, creative software, and the systems behind them — how a tool feels to use and how it works underneath.</p>
+          <dl class="about-facts">
+            <div>
+              <dt>Education</dt>
+              <dd>Statistics in Quantitative Finance co-op at the University of Toronto Scarborough.</dd>
+            </div>
+            <div>
+              <dt>Teaching</dt>
+              <dd>I teach robotics and programming at Brick Labs, where I explain technical ideas, troubleshoot problems, and help students build their own projects.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="body-skeleton body-section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">03 / Contact</span><h2 id="contact-title">Let’s talk.</h2><span aria-hidden="true">↗</span></div>
+      <div class="body-section__content">
+        <p class="contact-lead">Have something in mind?</p>
+        <a class="contact-email" href="mailto:realryanfong@gmail.com">realryanfong@gmail.com <span aria-hidden="true">↗</span></a>
+        <p class="contact-note">I’m open to roles, freelance projects, and collaborations. If you’re building an application or an interactive experience, I’d like to hear about it.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>Ryan Fong</p>
+    <p>2026</p>
+  </div>
+</footer>
+
+<dialog class="project-video" id="schooledup-demo" aria-labelledby="schooledup-demo-title">
+  <div class="project-video__inner">
+    <header class="project-video__head">
+      <h2 class="project-video__title" id="schooledup-demo-title">SchooledUp demo</h2>
+      <button class="project-video__close" type="button" data-video-close aria-label="Close demo">&#10005;</button>
+    </header>
+    <div class="project-video__stage">
+      <video class="project-video__video" controls playsinline preload="none" muted poster="assets/projects/schooledup-demo-poster.jpg" src="assets/projects/schooledup-demo.mp4"></video>
+    </div>
+  </div>
+</dialog>
+
+<script src="sculpture.js" defer></script>
+<script src="project-art.js" defer></script>
+<script src="hero-scroll.js" defer></script>
+<script src="project-video.js" defer></script>
+</body>
+</html>

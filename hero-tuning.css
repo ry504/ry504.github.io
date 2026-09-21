@@ -1,0 +1,98 @@
+/* Hero-first review: keep the body intentionally empty. */
+.body-skeleton { border-top: 1px solid #292a2d; padding-top: 48px; }
+.skeleton-heading { display: grid; grid-template-columns: 1fr 1.5fr auto; gap: 24px; align-items: baseline; }
+.skeleton-heading h2 { font-family: Arial, Helvetica, sans-serif; font-size: clamp(28px, 4vw, 56px); font-weight: 500; letter-spacing: -.045em; margin: 0; }
+.skeleton-heading > span:last-child { font-size: 25px; color: #ff4655; }
+.skeleton-space { min-height: 210px; }
+.skeleton-space--small { min-height: 120px; }
+.sculpture-shader { z-index: 2; }
+.statue__shimmer { display: none; }
+@media(max-width:600px){
+ .body-skeleton { padding-top: 28px; }
+ .skeleton-heading { grid-template-columns: 1fr auto; gap: 24px 12px; }
+ .skeleton-heading .section-tag { grid-column: 1/-1; }
+ .skeleton-space { min-height: 120px; }
+ .skeleton-space--small { min-height: 80px; }
+}
+/* Still sculpture: no scanlines, mouse-follow transforms, or noisy overlays. */
+.statue__img { opacity: 1; transition: none; }
+.hero__art { aspect-ratio: 2 / 3; will-change: auto; }
+.status-badge__dot { animation: none; box-shadow: none; }
+.hero__name--fong::after { display: none; }
+.hero__name { text-shadow: none; }
+.hero__art { mix-blend-mode: screen; }
+.hero__sub { font-family: var(--font-sans); text-transform: none; letter-spacing: 0; font-size: 13px; max-width: 32ch; color: #93938e; }
+@media(max-width:760px){
+ .hero__inner { display: block; min-height: 740px; padding-block: 0; }
+ .hero__art { left: 50%; right: auto; top: 0; height: 440px; transform: translateX(-50%); opacity: 1; }
+ .hero__title { display: block; font-size: clamp(65px,17.5vw,118px); margin: 0; }
+ .hero__name--ryan { position: absolute; left: var(--gutter); top: 76px; }
+ .hero__name--fong { position: absolute; right: var(--gutter); top: 238px; margin: 0; }
+ .hero__intro { position: absolute; top: 450px; left: var(--gutter); right: var(--gutter); max-width: 36ch; }
+ .hero__lede { font-size: 20px; line-height: 1.45; }
+ .hero__sub { max-width: 36ch; }
+ .hero__actions { position: absolute; top: 581px; left: var(--gutter); right: auto; gap: 24px; }
+ .hero__footer { position: absolute; bottom: 22px; left: var(--gutter); right: var(--gutter); flex-wrap: nowrap; gap: 15px; font-size: 8px; letter-spacing: .05em; }
+ .hero__scroll { width: auto; margin-left: auto; }
+ .hero__scroll-line { display: none; }
+ .site-header { padding-top: 18px; padding-bottom: 8px; }
+ .status-badge { width: 100%; border: 0; background: none; padding-inline: 0; margin: 0; }
+}
+/* The sculpture occludes the name, including the black spaces in its dither. */
+.hero__art { z-index: 3; mix-blend-mode: normal; }
+.hero__name { z-index: 2; }
+/* Clean interface typography; the pixel treatment belongs to the sculpture. */
+:root { --font-mono: var(--font-sans); }
+.status-badge, .section-tag, .hero__footer, .site-footer { font-family: var(--font-sans); text-transform: none; letter-spacing: 0; }
+.status-badge { font-size: 12px; }
+.section-tag { font-size: 12px; }
+.hero__footer { font-size: 12px; color: #92928c; }
+.site-footer { font-size: 12px; }
+.brand__mark { font-family: var(--font-sans); letter-spacing: -.04em; font-weight: 700; }
+@media(max-width:760px){ .hero__footer { font-size: 10px; } .status-badge { font-size: 11px; } }
+@media(max-width:760px){
+ .hero__art { top: 30px; height: 380px; }
+ .hero__name--ryan { top: 35px; }
+ .hero__name--fong { top: 390px; }
+ .hero__intro { top: 478px; }
+ .hero__actions { top: 620px; }
+ .hero__inner { min-height: 782px; }
+}
+.site-footer__inner { font-family: var(--font-sans); letter-spacing: 0; text-transform: none; font-size: 12px; }
+/* Close blindfolded portrait, matching the reference framing. */
+.hero__art { aspect-ratio: 9 / 16; height: 700px; top: 10px; }
+.statue__img { object-fit: cover; object-position: top; }
+@media(max-width:760px){ .hero__art { height: 380px; top: 30px; } }
+/* Let the portrait interrupt only the inner letter edges. */
+@media(min-width:761px){
+ .hero__art { height: 620px; top: 38px; }
+ .hero__title { font-size: clamp(96px, calc(14.8vw - 26px), 184px); }
+ .hero__name--ryan { top: 18%; }
+ .hero__name--fong { top: 43%; }
+}
+@media(min-width:761px){
+ .hero__name--ryan { left: calc(var(--gutter) + 10px); }
+ .hero__name--fong { top: 36%; }
+}
+
+/* Independent title layers and scroll-depth containment. */
+.hero { overflow: clip; }
+.hero__name--ryan { z-index: 5; }
+.hero__name--fong { z-index: 2; }
+
+/* Keep navigation available without shifting the hero's initial position. */
+.site-header {
+ position: sticky;
+ top: 0;
+ z-index: 60;
+ background: rgba(9, 10, 11, .96);
+ border-bottom: 1px solid transparent;
+}
+html { scroll-padding-top: 96px; }
+@media(max-width:900px){ html { scroll-padding-top: 130px; } }
+
+.site-header.is-docked { border-bottom-color: #202225; }
+
+/* Simple name and availability treatment at every breakpoint. */
+.brand__name { display: inline; }
+.status-badge { border: 0; background: none; padding: 0; color: var(--crimson); }

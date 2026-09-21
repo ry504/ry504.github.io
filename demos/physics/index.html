@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Physics demos — Ryan Fong</title><link rel="stylesheet" href="css/demo.css"></head>
+<body>
+<main>
+<header><a href="../../#physics">← Ryan Fong / Selected work</a><span>Interactive experiment</span></header>
+<div class="intro"><div><p class="eyebrow">Physics / Verlet simulation</p><h1>One engine,<br>three bodies.</h1></div><p>Soft-body area restoration, a ball on rolling terrain, and a two-wheel car. Drag directly in the canvas, or drive the car with A / D.</p></div>
+<section class="demo" aria-label="Interactive physics demos">
+<div class="toolbar">
+  <div class="actions" role="group" aria-label="Simulation mode">
+    <button class="mode" data-mode="softbody" aria-pressed="true">Soft body</button>
+    <button class="mode" data-mode="ball" aria-pressed="false">Ball</button>
+    <button class="mode" data-mode="car" aria-pressed="false">Car</button>
+  </div>
+  <div class="actions">
+    <button id="pause" class="primary">Pause</button>
+    <button id="reset">Reset</button>
+    <button id="terrain" hidden>New terrain</button>
+  </div>
+</div>
+<div class="canvas-wrap"><canvas id="world" width="1280" height="720" tabindex="0" aria-label="Physics canvas. Drag a soft-body point, or a ball, directly. In car mode use A and D or the arrow keys, or the hold buttons, to drive." aria-describedby="instructions">This demo requires a browser with Canvas support. A fixed 1/120 s Verlet step drives a soft body, a terrain ball, or a linked two-wheel car.</canvas></div>
+<div class="readout"><p id="status" role="status" aria-live="polite">Soft body running.</p><span id="metrics"></span></div>
+<div class="drive" hidden>
+  <span class="tool-label">Drive</span>
+  <div class="actions" role="group" aria-label="Car drive controls">
+    <button id="left" aria-label="Hold to drive left">◀ Left</button>
+    <button id="right" aria-label="Hold to drive right">Right ▶</button>
+  </div>
+</div>
+</section>
+<div class="details"><p id="instructions">Soft body: drag any point to stretch the ring; the links and area restoration pull it back. Ball: drag the ball and release to let it fall onto the rolling terrain. Car: the two wheels are held at a fixed distance; A / D or ← / → (or the hold buttons on touch) drive along the terrain tangent. Space pauses, R resets. Shortcuts apply only while the canvas is focused; the HUD shows the current mode.</p><div class="legend"><span><i class="soft"></i>Soft body</span><span><i class="ball"></i>Ball</span><span><i class="car"></i>Linked wheels</span><span><i class="ground"></i>Terrain</span></div></div>
+<footer><p>The original Python / py5 experiments were designed and hand-coded entirely by Ryan Fong. This JavaScript / Canvas version is an AI-assisted browser adaptation of that work.</p><p>Terrain uses seeded value noise rather than Processing's Perlin noise, so the exact hills intentionally differ; the physics algorithms are ports of the originals.</p></footer>
+</main><script type="module" src="js/app.js"></script>
+</body></html>
