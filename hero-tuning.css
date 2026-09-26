@@ -96,3 +96,11 @@ html { scroll-padding-top: 96px; }
 /* Simple name and availability treatment at every breakpoint. */
 .brand__name { display: inline; }
 .status-badge { border: 0; background: none; padding: 0; color: var(--crimson); }
+
+/* Let the longer co-op introduction size naturally above its actions. */
+@media(max-width:760px){
+ .hero__inner { min-height: 0; padding-top: 478px; padding-bottom: 22px; }
+ .hero__intro { position: relative; top: auto; left: auto; right: auto; max-width: 36ch; }
+ .hero__actions { position: relative; top: auto; left: auto; right: auto; margin-top: 24px; }
+ .hero__footer { position: relative; bottom: auto; left: auto; right: auto; margin-top: 40px; }
+}
