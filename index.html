@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ryan Fong | Software, AI &amp; Interactive Systems</title>
-<meta name="description" content="Ryan Fong, Statistics co-op at UTSC, seeking January 2027 software, product or startup operations roles. Explore SchooledUp and interactive software projects." />
+<title>Ryan Fong | Statistics, Data &amp; Analytics</title>
+<meta name="description" content="UTSC Statistics Co-op student specializing in Quantitative Finance, seeking January 2027 data and business analytics roles. Explore Python projects and information-processing workflows." />
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#090a0b" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="hero-tuning.css?v=20260926-coop" />
-<link rel="stylesheet" href="body-content.css?v=20260926-coop" />
+<link rel="stylesheet" href="hero-tuning.css?v=20260928-analytics2" />
+<link rel="stylesheet" href="body-content.css?v=20260928-analytics2" />
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 
     <p class="status-badge">
       <span class="status-badge__dot" aria-hidden="true"></span>
-      <span>January 2027 co-op</span>
+      <span>January 2027 analytics co-op</span>
     </p>
   </div>
 </header>
@@ -56,12 +56,12 @@
       </h1>
 
       <div class="hero__intro">
-        <p class="hero__lede">I build software that turns complex inputs into useful, interactive tools.</p>
-        <p class="hero__sub">Statistics co-op at UTSC · Seeking January 2027 software, product or startup operations roles</p>
+        <p class="hero__lede">I turn complex inputs into structured information and interactive tools.</p>
+        <p class="hero__sub">Statistics Co-op at UTSC, specializing in Quantitative Finance. I build Python tools and structured information workflows, and I'm seeking a January 2027 data analytics co-op.</p>
       </div>
 
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#work">Explore my work</a>
+        <a class="btn btn--primary" href="#work">View projects</a>
         <a class="btn btn--ghost" href="#schooledup">See SchooledUp</a>
       </div>
 
@@ -79,19 +79,27 @@
         <article class="work-entry" id="schooledup">
           <div class="work-entry__copy">
             <h3 class="work-entry__title"><a href="https://schooledup.app">SchooledUp</a></h3>
-            <p class="work-entry__subtitle">Full-stack product / AI ingestion systems</p>
+            <p class="work-entry__subtitle">Information processing / Software</p>
             <dl class="work-entry__meta">
               <div>
                 <dt>Problem and product</dt>
                 <dd>Course information arrives across documents, slides, recordings and email. I created SchooledUp to bring those inputs into one student workspace: extract deadlines and course information, route them to the right course, and organize them as tasks and source-linked notes.</dd>
               </div>
               <div>
-                <dt>My contribution</dt>
+                <dt>Creator and product developer</dt>
                 <dd>I directed product design and full-stack implementation using AI coding tools. My work spans the Next.js interface, Python/FastAPI backend, course routing and review workflow, with Supabase for application data, authentication and file storage.</dd>
               </div>
               <div>
                 <dt>Workflow and design choice</dt>
-                <dd>Materials in → extracted information → course routing → notes and tasks. Automation handles the first pass; students can review and correct results in the workspace. This adds a review step while keeping extracted information editable.</dd>
+                <dd>Documents, transcripts and email → extracted fields → course routing → source-linked notes and tasks. Results appear in the workspace after processing. Students can review the source and correct the information afterward.</dd>
+              </div>
+              <div>
+                <dt>Illustrative example · fictional data</dt>
+                <dd>Input: “STAT-DEMO: Problem set 2 is due October 14, 2026.” Intended output: a task named “Problem set 2,” assigned to STAT-DEMO with an October 14 deadline and a link to its source. This describes the workflow, not a measured extraction result.</dd>
+              </div>
+              <div>
+                <dt>Limits and corrections</dt>
+                <dd>Ambiguous dates, missing context or mixed-course material can lead to an incorrect deadline or course assignment. Students can inspect the linked source and edit results through the GUI. Automated output still needs judgment.</dd>
               </div>
             </dl>
           </div>
@@ -119,6 +127,14 @@
                 <dt>My contribution</dt>
                 <dd>The original Python/py5 project was designed and hand-coded entirely by me, including graph generation, A* pathfinding, agent behaviour, and the interactive editor. The browser adaptation was developed with AI assistance.</dd>
               </div>
+              <div>
+                <dt>Question, inputs and method</dt>
+                <dd>Can an agent reach a goal using walks, jumps and drops? Platform tiles and start/goal positions become a navigation graph. A* searches the connections, and the agent attempts the route under gravity and collision rules.</dd>
+              </div>
+              <div>
+                <dt>Output and limitations</dt>
+                <dd>The playground displays the graph, route and agent movement. Link costs and jump reachability are approximations, so a route is not guaranteed to be shortest or physically completable on every custom level.</dd>
+              </div>
             </dl>
           </div>
           <a class="work-entry__art work-entry__art--link" href="demos/pathfinding/" aria-label="Open the pathfinding playground">
@@ -138,6 +154,14 @@
                 <dt>Related experiments</dt>
                 <dd>Ball physics on uneven terrain, then a simple car made by linking two balls together and adding directional controls. Built in Processing’s Python mode.</dd>
               </div>
+              <div>
+                <dt>Model and output</dt>
+                <dd>How do linked points respond to gravity and a mouse drag? Initial positions, gravity, damping and distance constraints drive a Verlet simulation. Area restoration gives the soft body its shape; a distance constraint links the car’s wheels. The output is an interactive view of deformation and motion.</dd>
+              </div>
+              <div>
+                <dt>My contribution and limitations</dt>
+                <dd>I independently programmed the original Python/py5 and Processing experiments. The JavaScript/Canvas adaptations are AI-assisted. These are simplified numerical models, not calibrated physical measurements. Terrain and dragging differ from the originals, and steep slopes can exceed the car’s driving force.</dd>
+              </div>
             </dl>
           </div>
           <a class="work-entry__art work-entry__art--link" href="demos/physics/" aria-label="Open the physics playground">
@@ -147,6 +171,33 @@
             <span class="work-entry__art-footer">Open physics playground <span aria-hidden="true">&#8599;</span></span>
           </a>
         </article>
+
+      </div>
+    </div>
+  </section>
+  <section class="body-skeleton body-section" id="about" aria-labelledby="about-title">
+    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">02 / Background</span><h2 id="about-title">A little about me</h2><span aria-hidden="true">+</span></div>
+      <div class="body-section__content">
+        <div class="about-grid">
+          <p class="about-grid__lead">I’m interested in how messy information becomes something people can use to make decisions. My projects explore structured information workflows, algorithms and mathematical models. I’m seeking data-analysis, business-analytics and reporting roles where I can apply my statistics background and Python programming.</p>
+          <dl class="about-facts">
+            <div>
+              <dt>Education</dt>
+              <dd>Statistics Co-op, specializing in Quantitative Finance, at the University of Toronto Scarborough. Expected graduation: 2030.</dd>
+            </div>
+            <div>
+              <dt>Teaching</dt>
+              <dd>I teach robotics and programming at Brick Labs, where I explain technical ideas, troubleshoot problems, and help students build their own projects.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="body-skeleton body-section" id="interests" aria-labelledby="interests-title">
+    <div class="wrap">
+      <div class="skeleton-heading"><span class="section-tag">03 / Beyond the projects</span><h2 id="interests-title">Additional interests</h2><span aria-hidden="true">↗</span></div>
+      <div class="body-section__content">
         <article class="work-entry" id="film">
           <div class="work-entry__copy">
             <h3 class="work-entry__title">Film projects</h3>
@@ -169,32 +220,13 @@
       </div>
     </div>
   </section>
-  <section class="body-skeleton body-section" id="about" aria-labelledby="about-title">
-    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">02 / Background</span><h2 id="about-title">A little about me</h2><span aria-hidden="true">+</span></div>
-      <div class="body-section__content">
-        <div class="about-grid">
-          <p class="about-grid__lead">I enjoy turning an unclear problem into a tool people can use, then working through the details behind it. I’m interested in software, product and implementation roles, including hands-on work at established startups across industries.</p>
-          <dl class="about-facts">
-            <div>
-              <dt>Education</dt>
-              <dd>Statistics in Quantitative Finance co-op at the University of Toronto Scarborough.</dd>
-            </div>
-            <div>
-              <dt>Teaching</dt>
-              <dd>I teach robotics and programming at Brick Labs, where I explain technical ideas, troubleshoot problems, and help students build their own projects.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="body-skeleton body-section" id="contact" aria-labelledby="contact-title">
-    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">03 / Contact</span><h2 id="contact-title">Let’s talk.</h2><span aria-hidden="true">↗</span></div>
+    <div class="wrap"><div class="skeleton-heading"><span class="section-tag">04 / Contact</span><h2 id="contact-title">Let’s talk.</h2><span aria-hidden="true">↗</span></div>
       <div class="body-section__content">
-        <p class="contact-lead">Hiring for a January 2027 co-op?</p>
+        <p class="contact-lead">Hiring an analytics co-op for January 2027?</p>
         <a class="contact-email" href="mailto:realryanfong@gmail.com">realryanfong@gmail.com <span aria-hidden="true">↗</span></a>
         <a class="contact-social" href="https://www.linkedin.com/in/realryanfong/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        <p class="contact-note">I’m seeking paid software, product or startup operations opportunities in Toronto/GTA or remotely in Canada, starting January 2027. A four-month term is preferred; an eight-month term would need university sequence approval.</p>
+        <p class="contact-note">Seeking paid data-analysis, business-analytics and reporting co-ops in Toronto/GTA or remotely in Canada, starting January 2027. Four months preferred; eight months subject to university approval.</p>
       </div>
     </div>
   </section>

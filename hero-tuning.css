@@ -104,3 +104,7 @@ html { scroll-padding-top: 96px; }
  .hero__actions { position: relative; top: auto; left: auto; right: auto; margin-top: 24px; }
  .hero__footer { position: relative; bottom: auto; left: auto; right: auto; margin-top: 40px; }
 }
+
+/* Give the analytics supporting copy the full intro column. */
+.hero__sub { max-width: none; }
+@media(min-width:761px){ .hero__intro { top: 62%; } }
